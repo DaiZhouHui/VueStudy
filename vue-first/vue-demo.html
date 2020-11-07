@@ -8,13 +8,19 @@
 	</head>
 	<body>
 		<!-- view层   模板 -->
+
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
 		<div id="app">
 			{{message}}
 		</div>
 		<script>
 			var vm =new Vue({
 				el:"#app",
+
 				// Model: 数据
+
 				data:{
 					message:"hello,vue!"
 				}
