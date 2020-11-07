@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>双向绑定 下拉框</title>
+		<!-- 导入vue.js -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+		下拉框：
+		<select v-model="ischeck">
+			<option   value=""  disabled="disabled">-请选择-</option><!-- disabled失去功能 -->
+			<option >A</option>
+			<option>B</option>
+			<option>C</option>
+		</select>
+		{{ischeck}}
+		</div>
+		
+		<script>
+			var vm = new Vue({
+				el:"#app",
+				data:{
+					ischeck:""
+			}
+			})
+		</script>
+	</body>
+
+</html>
