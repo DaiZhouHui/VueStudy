@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>v-if-else-if</title>
+		<!-- 导入vue.js -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- 判断  if   else -->
+			<h1 v-if="ok">Yes</h1>
+			<h1 v-else>No</h1>
+			
+		</div>
+		<div id="app2">
+			<h2 v-if="type==='A'">A</h2>
+			<h2 v-else-if="type==='B'">B</h2>
+			<h2 v-else>C</h2>
+		</div>		
+		<script>
+			var vm =new Vue({
+				el:"#app",
+				// Model: 数据
+				data:{
+					ok:true,
+					}
+			});
+			var vm =new Vue({
+				el:"#app2",
+				data:{
+					type:'A'
+					}
+			})
+
+		</script>
+	</body>
+</html>
